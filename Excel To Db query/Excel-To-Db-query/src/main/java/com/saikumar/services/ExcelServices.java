@@ -56,7 +56,7 @@ public class ExcelServices {
 					
 					switch(cellNumber) {
 					case 0:
-						emp.setEmpid((int)cell.getNumericCellValue());
+						emp.setEmpId((int)cell.getNumericCellValue());
 						break;
 					case 1:
 						emp.setEmpFirstName(cell.getStringCellValue());

@@ -9,14 +9,14 @@ import javax.persistence.Table;
 public class Employee {
 
 	@Id
-	private Integer empid;
+	private Integer empId;
 	private String empFirstName;
 	private String empLastName;
 	private String empMail;
 	private int empGovtId;
 
-	public Employee(Integer empid, String empFirstName, String empLastName, String empMail, Integer empGovtId) {
-		this.empid = empid;
+	public Employee(Integer empId, String empFirstName, String empLastName, String empMail, Integer empGovtId) {
+		this.empId = empId;
 		this.empFirstName = empFirstName;
 		this.empLastName = empLastName;
 		this.empMail = empMail;
@@ -27,12 +27,12 @@ public class Employee {
 		
 	}
 	
-	public Integer getEmpid() {
-		return empid;
+	public Integer getEmpId() {
+		return empId;
 	}
 
-	public void setEmpid(Integer empId) {
-		this.empid = empId;
+	public void setEmpId(Integer empId) {
+		this.empId = empId;
 	}
 
 	public String getEmpFirstName() {
@@ -69,7 +69,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [empid=" + empid + ", empFirstName=" + empFirstName + ", empLastName=" + empLastName
+		return "Employee [empid=" + empId + ", empFirstName=" + empFirstName + ", empLastName=" + empLastName
 				+ ", empMail=" + empMail + ", empGovtId=" + empGovtId + "]";
 	}
 	
